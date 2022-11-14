@@ -1,12 +1,13 @@
 package Animals;
 
 public class Eagle extends Animal{
-    public void eat(){
-        System.out.println("Eat : meat");
-    }
 
     @Override
-    public void name() {
-        System.out.println("Name : Eagle");
+    public void fly() {
+        super.fly();
+    }
+
+    public Eagle(String name, int age) {
+        super(name, age);
     }
 }

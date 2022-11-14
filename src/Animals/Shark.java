@@ -1,13 +1,14 @@
 package Animals;
 
-public class Shark extends Animal{
-
-    public void eat(){
-        System.out.println("Eat : meat");
-    }
+public class Shark extends Animal {
 
     @Override
-    public void name() {
-        System.out.println("Name : Shark");
+    public void attack() {
+        super.attack();
     }
+
+    public Shark(String name, int age) {
+        super(name, age);
+    }
+
 }
